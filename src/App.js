@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Crear from "./components/Crear";
+import Mostrar from "./components/Mostrar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container text-center pt-4">
+      <h1>CRUD React Context API - Reducer</h1>
+      <div className="row">
+        <div className="col-md-6 mt-5">
+          <Crear></Crear>
+        </div>
+        <div className="col-md-6">
+          <Mostrar></Mostrar>
+        </div>
+      </div>
     </div>
   );
 }
